@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.fs</groupId>
   <artifactId>fesa-commons-app</artifactId>
-  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>fesa-commons-app Maven Webapp</name>
   <url>http://maven.apache.org</url>
