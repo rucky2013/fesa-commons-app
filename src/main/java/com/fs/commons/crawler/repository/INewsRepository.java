@@ -7,8 +7,7 @@ public interface INewsRepository {
 
 	public abstract boolean saveNews(NewsPojo paramNewsPojo);
 
-	public abstract List<NewsPojo> getNewsForPage(Long paramLong,
-			String paramString);
+	public abstract List<NewsPojo> getNewsForPage(int pid,Long timstamp, String type);
 
 	public abstract NewsPojo getNewsById(int paramInt);
 }
