@@ -15,6 +15,7 @@ public class NewsPojo {
 	private String time;
 	private String image;
 	private String title;
+	private String context;
 	private String source;
 	private String url;
 	
@@ -54,6 +55,13 @@ public class NewsPojo {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+	@Column(name="context",columnDefinition="text")
+	public String getContext() {
+		return context;
+	}
+	public void setContext(String context) {
+		this.context = context;
 	}
 	@Column(name="url",length=300)
 	public String getUrl() {
