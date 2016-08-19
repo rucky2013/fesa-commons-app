@@ -18,6 +18,7 @@ public class NewsPojo {
 	private String context;
 	private String source;
 	private String url;
+	private String category;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -76,6 +77,13 @@ public class NewsPojo {
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+	@Column(name="category",length=100)
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	@Override
 	public String toString() {
