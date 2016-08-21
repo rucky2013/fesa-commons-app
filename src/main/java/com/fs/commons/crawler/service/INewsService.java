@@ -24,4 +24,12 @@ public interface INewsService {
 	 * 本地接口:根据ID获取新闻实体
 	 */
 	NewsPojo getNewsById(int id);
+	/*
+	 * 获取未分类新闻
+	 */
+	List<NewsPojo> getNewsForCategory(String category);
+	/*
+	 * 更新新闻分类
+	 */
+	Boolean updateNewsCategory(NewsPojo pojo,String category);
 }

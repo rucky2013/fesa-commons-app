@@ -10,4 +10,8 @@ public interface INewsRepository {
 	public abstract List<NewsPojo> getNewsForPage(int pid,Long timstamp, String type);
 
 	public abstract NewsPojo getNewsById(int paramInt);
+	
+	public abstract List<NewsPojo> getNewsForCategory(String category);
+	
+	public abstract boolean updateNewsCategory(NewsPojo pojo, String category);
 }
